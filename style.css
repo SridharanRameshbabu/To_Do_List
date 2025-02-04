@@ -1,0 +1,103 @@
+body {
+    background: rgb(46,162,187);
+    background: linear-gradient(90deg, rgba(46, 161, 187, 0.766) 0%, rgba(139, 42, 161, 0.766) 50%);
+    display: flex;
+    align-items: center;
+}
+
+.main-header{
+    background-color: rgba(54, 18, 54, 0.744);
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgb(148, 69, 103);
+}
+
+.addtask {
+    border: 1.5px solid black;
+    outline: none;
+    padding: 10px;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.252);
+}
+
+.input {
+    height: 50px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+    font-size: 20px;
+}
+
+.btns {
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    border: 1.5px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(243, 184, 89);
+}
+
+.btns:hover {
+    background-color: rgb(243,184,89);
+}
+
+.content {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 5px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.edit-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background-color: darkblue;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
